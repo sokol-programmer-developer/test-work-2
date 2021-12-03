@@ -103,7 +103,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
     z-index: 5;
 }
 
-@media screen and (min-width: 100px) and (max-width: 1200px) {
+@media screen and (min-width: 100px) and (max-width: 700px) {
 
     .accordion_section{
         top: 5vh;
@@ -132,16 +132,102 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
 
     .accordion_heading{
         grid-template-columns: repeat(2,1fr);
-        width: 96vw;
+        width: 98vw;
         height: 10vh;
+        grid-column-gap: 40vw;
         background-color: rgba(255,255,255,1);
         overflow: hidden;
     }
 
     .accordion_heading:hover .accordion_name{color: #4dba5e;}
 
+
     .accordion_name{
-        left:9vh;
+        left:10vh;
+        width: 65vw;
+        height: 15vh;
+        font-size: 1.5vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        justify-content: start;
+        color: rgba(000,000,000,0.8);
+    }
+
+    .accordion_button{
+        right: 8.5vh;
+        width: 5vw;
+        height: 5vh;
+        font-size: 4vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        color:  rgba(000,000,000,0.8);
+    }
+
+    .accordion_button:hover{color: #4dba5e;}
+
+    .accordion_text{
+        width: 80vw;
+        background-color: rgba(255,255,255,1);
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .accordion_h2{
+        width: 70vw;
+        padding: 2vh 2vw;
+        background-color: rgba(255,255,255,1);
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        z-index: 5;
+    }
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+
+
+    .accordion_section{
+        top: 5vh;
+        width: 80vw;
+        height: 115vh;
+        overflow: hidden;
+    }
+
+    .accordion_container{
+        bottom: 7vh;
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .accordion_title{
+        bottom: 2vh;
+        width: 80vw;
+        height: 10vh;
+        font-size: 3vh;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: rgba(000,000,000,0.8);
+    }
+
+    .accordion_heading{
+        grid-template-columns: repeat(2,1fr);
+        width: 98vw;
+        height: 10vh;
+        grid-column-gap: 40vw;
+        /*background-color: rgba(255,255,255,1);*/
+        overflow: hidden;
+    }
+
+    .accordion_heading:hover .accordion_name{color: #4dba5e;}
+
+    .accordion_name{
+        left:15vh;
         width: 65vw;
         height: 15vh;
         font-size: 2vh;
@@ -153,7 +239,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
     }
 
     .accordion_button{
-        right: 12vh;
+        right: 16vh;
         width: 5vw;
         height: 5vh;
         font-size: 4vh;
