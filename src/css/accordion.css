@@ -132,7 +132,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
 
     .accordion_heading{
         grid-template-columns: repeat(2,1fr);
-        width: 80vw;
+        width: 96vw;
         height: 10vh;
         background-color: rgba(255,255,255,1);
         overflow: hidden;
