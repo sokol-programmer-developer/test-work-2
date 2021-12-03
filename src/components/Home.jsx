@@ -1,18 +1,18 @@
 import React from "react";
-import "./Style.css"
+import "../css/Style.css";
+import "../css/carousel.css";
+import "../css/accordion.css";
 import Header from "./Header";
-import Carousel from "./Carousel";
+import Accordion from "./Accordion";
 import CarouselContent from "./CarouselContent";
 
 
-const Home = ({ items }) => {
+const Home = () => {
     return (
-        <div className="home_section">
-            <Header items={items}/>
-            <Carousel/>
+        <div className="home">
+            <Header />
             <CarouselContent/>
-
-
+            <Accordion/>
         </div>
     )
 }
