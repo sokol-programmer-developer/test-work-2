@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.accordion_section,
+.accordion_container,
+.accordion_title,
+.accordion_content,
+.accordion_item,
+.accordion_heading,
+.accordion_name,
+.accordion_button,
+.accordion_text,
+.accordion_h2
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.accordion_section{
+    top: 5vh;
+    width: 80vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.accordion_container{
+    width: 80vw;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.accordion_title{
+
+    width: 80vw;
+    height: 10vh;
+    font-size: 3vh;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: rgba(000,000,000,0.8);
+}
+
+.accordion_heading{
+    grid-template-columns: repeat(2,1fr);
+    width: 80vw;
+    grid-column-gap: 40vw;
+    height: 10vh;
+    background-color: rgba(255,255,255,1);
+    overflow: hidden;
+}
+
+.accordion_heading:hover .accordion_name{color: #4dba5e;}
+
+.accordion_name{
+    width: 30vw;
+    height: 15vh;
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    justify-content: start;
+    color: rgba(000,000,000,0.8);
+}
+
+.accordion_button{
+    width: 5vw;
+    height: 5vh;
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color:  rgba(000,000,000,0.8);
+}
+
+.accordion_button:hover{color: #4dba5e;}
+
+.accordion_text{
+    width: 80vw;
+    background-color: rgba(255,255,255,1);
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.accordion_h2{
+    width: 70vw;
+    padding: 2vh 2vw;
+    background-color: rgba(255,255,255,1);
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    z-index: 5;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+
+    .accordion_section{
+        top: 5vh;
+        width: 80vw;
+        height: 115vh;
+        overflow: hidden;
+    }
+
+    .accordion_container{
+        bottom: 7vh;
+        width: 80vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .accordion_title{
+        bottom: 2vh;
+        width: 80vw;
+        height: 10vh;
+        font-size: 3vh;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: rgba(000,000,000,0.8);
+    }
+
+    .accordion_heading{
+        grid-template-columns: repeat(2,1fr);
+        width: 80vw;
+        height: 10vh;
+        background-color: rgba(255,255,255,1);
+        overflow: hidden;
+    }
+
+    .accordion_heading:hover .accordion_name{color: #4dba5e;}
+
+    .accordion_name{
+        left:9vh;
+        width: 65vw;
+        height: 15vh;
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        justify-content: start;
+        color: rgba(000,000,000,0.8);
+    }
+
+    .accordion_button{
+        right: 12vh;
+        width: 5vw;
+        height: 5vh;
+        font-size: 4vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        color:  rgba(000,000,000,0.8);
+    }
+
+    .accordion_button:hover{color: #4dba5e;}
+
+    .accordion_text{
+        width: 80vw;
+        background-color: rgba(255,255,255,1);
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .accordion_h2{
+        width: 70vw;
+        padding: 2vh 2vw;
+        background-color: rgba(255,255,255,1);
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        z-index: 5;
+    }
+
+}
