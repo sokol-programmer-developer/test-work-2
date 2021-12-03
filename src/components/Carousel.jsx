@@ -1,18 +1,16 @@
 
-import React, { useEffect, useState } from 'react'
-import './Style.css'
-import CarouselContent from "./CarouselContent";
-
+import React, { useEffect, useState } from "react";
+import "../css/carousel.css";
 
 const Carousel = (props) => {
-    const {children, show} = props
+    const {children, show,  } = props;
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [length, setLength] = useState(children.length);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex(currentIndex === children.length-1 ? 0 : currentIndex + 1);
+            setCurrentIndex(currentIndex === children.length-4 ? 0 : currentIndex + 1);
         }, 5000);
         return () => clearInterval(interval);
     }, [currentIndex, children.length]);
@@ -33,12 +31,14 @@ const Carousel = (props) => {
         }
     };
 
+
     return (
         <div className="carousel_container">
             <div className="carousel_wrapper">
 
 
                 <div className="carousel_arrow">
+
                     {
                         currentIndex > 0 &&
                         <button onClick={prev} className="left_arrow">
@@ -51,20 +51,42 @@ const Carousel = (props) => {
                         <button onClick={next} className="right_arrow">
                             &gt;
                         </button>
-
                     }
                 </div>
 
-
                 <div className="carousel_content_wrapper">
-                    <div
-                        className={`carousel_content show-${show}`}
-                        style={{ transform: `translateX(-${currentIndex * (100 / show)}vw)` }}
-                    >
 
-                       <CarouselContent> {children} </CarouselContent>
 
-                    </div>
+                    {
+                         window.screen.width >= 1200
+                            ?
+                          (
+                              <div
+                                className={`carousel_content show-${show}`}
+                                style={{transform: `translateX(-${currentIndex * (100 / show)}vw)`}}
+                            >
+
+
+                                {children}
+
+                            </div>
+                          )
+
+                            :
+
+                           (
+                               <div
+                                className={`carousel_content show-${show}`}
+                                style={{transform: `translateX(-${currentIndex * (400 / show)}vw)`}}
+
+                            >
+
+                                {children}
+
+                            </div>
+                           )
+                    }
+
                 </div>
 
 
@@ -73,4 +95,4 @@ const Carousel = (props) => {
     )
 }
 
-export default Carousel
+export default Carousel;
