@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/accordion.css"
+import "../css/accordion.css";
 import { content } from './AccordionData.js';
 import AccordionContent from "./AccordionContent";
 
