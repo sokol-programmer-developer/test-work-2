@@ -70,14 +70,39 @@ const Header = () => {
                     <h3 className="subHeader_h3" >Присоединяйтесь</h3>
                 </div>
 
-                <div className="subHeader_icons">
-                    <Link to="Article"><img src={icon_vk}          alt="vk"          className="header_icon"/></Link>
-                    <Link to="Article"><img src={icon_instagram}   alt="instagram"   className="header_icon"/></Link>
-                    <Link to="Article"><img src={icon_tik_tok}     alt="tik-tok"     className="header_icon"/></Link>
-                    <Link to="Article"><img src={icon_twitter}     alt="twitter"     className="header_icon"/></Link>
-                    <Link to="Article"><img src={icon_yandex_dzen} alt="yandex_dzen" className="header_icon"/></Link>
-                    <Link to="Article"><img src={icon_facebook}    alt="facebook"    className="header_icon"/></Link>
-                </div>
+               
+        <div className='subHeader_icons'>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_vk} alt='vk' className='header_icon' />
+            </Link>
+          </button>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_instagram} alt='instagram' className='header_icon' />
+            </Link>
+          </button>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_tik_tok} alt='tik-tok' className='header_icon' />
+            </Link>
+          </button>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_twitter} alt='twitter' className='header_icon' />
+            </Link>
+          </button>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_yandex_dzen} alt='yandex_dzen' className='header_icon' />
+            </Link>
+          </button>
+          <button className='header__button--icon'>
+            <Link to='Article'>
+              <img src={icon_facebook} alt='facebook' className='header_icon' />
+            </Link>
+          </button>
+        </div>
 
             </div>
         </div>
