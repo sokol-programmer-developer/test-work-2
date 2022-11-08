@@ -176,11 +176,22 @@ p,h1,h2,h3,h4,img,
     height: 5vh;
 }
 
+.header__button--icon {
+    border: none;
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 1vh 3.6vw 0, rgba(0, 0, 0, 0.06) 0 0 0 0.1vh;
+    cursor: pointer;
+  }
+
+.header__button--icon:hover {
+  background-color: #fff;
+}
+
 .header_icon{
     width: 3vw;
     height: 5vh;
-    border-radius: 1vh;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 1vh 3.6vw 0, rgba(0, 0, 0, 0.06) 0 0 0 0.1vh;
+   
+   
     cursor: pointer;
 }
 
@@ -290,10 +301,21 @@ p,h1,h2,h3,h4,img,
         height: 10vh;
     }
 
+    .header__button--icon {
+        border: none;
+        border-radius: 1vh;
+        box-shadow: rgba(0, 0, 0, 0.4) 0 1vh 3.6vw 0, rgba(0, 0, 0, 0.06) 0 0 0 0.1vh;
+        cursor: pointer;
+  }
+
+    .header__button--icon:hover {
+        background-color: #fff;
+    }
+    
     .header_icon{
         width: 12vw;
         height: 7vh;
-        border-radius: 1vh;
+       
     }
 
 }
